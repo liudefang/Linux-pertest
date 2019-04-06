@@ -11,7 +11,7 @@
 
 ```sh
 [root@VM_0_6_centos high-iowait-process]# gcc -o app app.c
-[root@VM_0_6_centos high-iowait-process]# docker build -t 
+[root@VM_0_6_centos high-iowait-process]# docker build -t kuli/app:iowait -f Dockerfile  .
 ```
 
 ## 运行案例应用
