@@ -1,4 +1,4 @@
-FROM centos
+FROM ubuntu
 
 LABEL maintainer="15989576517@139.com"
 
