@@ -10,13 +10,15 @@
 ## 构建 Docker 镜像
 
 ```sh
-make build
+[root@VM_0_6_centos high-iowait-process]# gcc -o app app.c
+[root@VM_0_6_centos high-iowait-process]# docker build -t 
 ```
 
 ## 运行案例应用
 
 ```sh
-make run
+[root@VM_0_6_centos high-iowait-process]# docker run --privileged --name=app -id kuli/app:iowait
+
 ```
 
 默认的运行命令为 `docker run --privileged --name=app -itd kuli/app:iowait`。
@@ -42,5 +44,6 @@ Reading data from disk /dev/sdb with buffer size 67108864 and count 20
 ## 停止应用
 
 ```sh
-make clean
+docker rm -f app
+
 ```
